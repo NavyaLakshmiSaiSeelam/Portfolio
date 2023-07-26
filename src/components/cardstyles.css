@@ -1,0 +1,116 @@
+/* cardstyles.css */
+.work-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10px;
+    padding: 0 20px; /* Add padding to the container */
+  }
+  
+  .project-heading {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 40px;
+    text-align: center;
+  }
+  
+  .project-container {
+    display: flex;
+    flex-wrap: wrap; /* Allow cards to wrap to a new row on smaller screens */
+    justify-content: center; /* Center the cards horizontally */
+  }
+  
+  .project-card {
+    width: 500px; /* Set a fixed width for the cards */
+    background-color: #95d5ee;
+    padding: 20px;
+    margin: 20px; /* Add some spacing between the cards */
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .project-card img {
+    width: 100%;
+    max-height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    
+  }
+  
+  .project-card h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    
+  }
+  
+  .project-card p {
+    text-align: justify;
+    font-size: 16px;
+    color: #0a0808;
+    margin-bottom: 10px;
+    
+  }
+  .project-info{
+    flex: 1;
+    
+    
+  }
+  .button-container {
+    
+    display: flex;
+    justify-content: center; /* Center the buttons horizontally */
+    margin-top: 20px;
+    
+  }
+  
+  .btn-container {
+    margin: 0 5px; /* Add margin between the buttons */
+  }
+  .btn {
+    padding: 8px 12px;
+    font-size: 14px;
+    text-transform: uppercase;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  .btn-light {
+    background: transparent;
+    color: #fff;
+  }
+  .btn:hover {
+    background: rgba(255, 255, 255, 0.2);
+  }
+  /* cardstyles.css */
+/* ... Previous styles ... */
+
+.btn-view {
+    background-color: #5ca6e4; /* Green color for the "View" button */
+    margin-right: 300px;
+  }
+  
+  .btn-source {
+    background-color: #31292a; /* Red color for the "Source" button */
+  }
+  
+  
+  /* Responsive Styles */
+  @media screen and (max-width: 768px) {
+    .project-card {
+      width: 80%; /* Change the width to occupy the full container */
+    }
+    .btn-view,
+    .btn-source {
+    width: 45%; /* Adjust the button width for better spacing */
+  }
+  }
+  
